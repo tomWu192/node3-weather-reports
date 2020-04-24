@@ -1,0 +1,14 @@
+{
+  "name": "weather-report",
+  "version": "0.0.0",
+  "description": "WeatherReport",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "request": "^2.88.2"
+  }
+}
