@@ -31,7 +31,7 @@
             message1.textContent = "loading...";
             message2.textContent = "loading...";
             let address = document.querySelector("#Address").value;
-            fetch("http://localhost:3000/weather?address=" + address + "", { method: "get" }).then((response) => {
+            fetch("/weather?address=" + address + "", { method: "get" }).then((response) => {
                 response.json().then((data) => {
                     if (data.error) {
                         message1.textContent = data.error;

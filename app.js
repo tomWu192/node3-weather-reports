@@ -4,6 +4,7 @@ const path = require("path");
 const geocoding = require("./geocoding.js");
 const weather = require("./weather.js");
 const app = express();
+const port = process.env.PORT||3000;
 app.set("view engine", "hbs");
 let ViewsPath = path.join(__dirname, "Content/Views");
 let PartialPath = path.join(__dirname, "Content/Partials");
@@ -30,4 +31,4 @@ app.get("/weather", (req, res) => {
         });
     });
 });
-app.listen(3000, () => { console.log("3000 Port is listeninig"); });
+app.listen(port, () => { console.log(" Port is listeninig ", port); });
