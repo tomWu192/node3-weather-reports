@@ -13,6 +13,9 @@ hbs.registerPartials(PartialPath);
 app.get("/", (req, res) => {
     res.render("index", { title: 'Home', name: 'tom' });
 });
+app.get("/about", (req, res) => {
+    res.render("about", { title: 'Home', name: 'tom' });
+});
 app.get("/weather", (req, res) => {
     let address = req.query.address;
     if (!address) {
